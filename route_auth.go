@@ -1,7 +1,7 @@
 package main
 
 import (
-	"ssan_in2go/data"
+	"dawei_in2go/data"
 	"fmt"
 	"net/http"
 	"strings"
