@@ -8,4 +8,8 @@ Some differences include:
 
 * There are test files in this code
 * All structs are fully fleshed out
-* Some of the functions are placed as methods for the struct types instead of being a part of the package
+* Some of the functions are placed as methods for the struct types instead of being a part of the package、
+
+Attention:
+1.cd github.com/mattn/go-sqlite3
+  go build --tags "foreign_keys" 

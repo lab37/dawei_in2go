@@ -425,7 +425,7 @@ func SelectOutStocks(args map[string]string) (outStocks []OutStock, err error) {
 
 
 func InsertOutStock(r *OutStock) (err error) {
-	statement := "insert into outStocks(cstmid,prdtid, mac, sn, create_date, quantity, remark) values ((select id from customers where customers.cstmname like ? limit 1),(select id from products where products.prdtname like ? and products.specific like ? limit 1),?,?,?,?,?)"
+	statement := "insert into outstocks(cstmid,prdtid, mac, sn, create_date, quantity, remark) values ((select id from customers where customers.cstmname like ? limit 1),(select id from products where products.prdtname like ? and products.specific like ? limit 1),?,?,?,?,?)"
 	stmt, err := Db.Prepare(statement)
 	defer stmt.Close()
 	if err != nil {
